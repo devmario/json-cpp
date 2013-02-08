@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'json-cpp' target in the 'json-cpp' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+#endif
