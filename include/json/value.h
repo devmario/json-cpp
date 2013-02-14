@@ -242,6 +242,7 @@ namespace Json {
       Value( const Value &other );
       ~Value();
 
+       Value* getValueFastIndex( int index );
       Value &operator=( const Value &other );
       /// Swap values.
       /// \note Currently, comments are intentionally not swapped, for
