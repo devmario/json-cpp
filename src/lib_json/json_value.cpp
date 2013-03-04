@@ -743,6 +743,8 @@ Value::asInt() const
       return 0;
    case booleanValue:
       return value_.bool_ ? 1 : 0;
+   case stringValue:
+	  return atoi(value_.string_);
    default:
       break;
    }
