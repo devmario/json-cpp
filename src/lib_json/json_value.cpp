@@ -891,9 +891,13 @@ Value::asFloat() const
    case realValue:
       return static_cast<float>( value_.real_ );
    case nullValue:
-      return 0.0;
+		return 0.0;
    case booleanValue:
-      return value_.bool_ ? 1.0f : 0.0f;
+		return value_.bool_ ? 1.0f : 0.0f;
+   case stringValue:
+		float _val;
+        sscanf(value_.string_, "%f", &_val);         // string to float
+		return _val;
    default:
       break;
    }
