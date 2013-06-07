@@ -919,6 +919,8 @@ Value::asBool() const
       return value_.uint_ ? true : false;
    case realValue:
       return value_.real_ ? true : false;
+   case stringValue:
+      return value_.string_ ? true : false;
    default:
       break;
    }
