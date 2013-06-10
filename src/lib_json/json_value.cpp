@@ -920,7 +920,7 @@ Value::asBool() const
    case realValue:
       return value_.real_ ? true : false;
    case stringValue:
-      return value_.string_ ? true : false;
+      return std::string(value_.string_) == "1" || std::string(value_.string_) == "true";
    default:
       break;
    }
