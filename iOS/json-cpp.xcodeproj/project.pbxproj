@@ -401,6 +401,7 @@
 		AC83A94516C4FA010091D69A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = armv7;
 				DSTROOT = /tmp/json_cpp.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "json-cpp/json-cpp-Prefix.pch";
@@ -415,6 +416,7 @@
 		AC83A94616C4FA010091D69A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = armv7;
 				DSTROOT = /tmp/json_cpp.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "json-cpp/json-cpp-Prefix.pch";
